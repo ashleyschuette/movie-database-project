@@ -1,0 +1,43 @@
+body {
+  font-family: $lato;
+  color: #fff;
+  background: #000 url(http://www.digicm.com/site_images/bg1.jpg) no-repeat;
+}
+
+.Main {
+    @include width-height(100%, 100vh);
+}
+
+.header {
+    @include width-height(100%, 15%);
+}
+
+.logo {
+    margin: 30px 30px;
+}
+
+.card-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.image-size {
+    @include width-height(250px, 370px);
+}
+
+.movie-title {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.card-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 3% 1%;
+}

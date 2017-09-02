@@ -1,0 +1,9 @@
+@import './util/reset';
+@import './util/variables';
+@import './util/mixins';
+
+@import './components/search-page';
+@import './components/_main.scss';
+@import './components/_popUp.scss';
+
+// import each scss file here

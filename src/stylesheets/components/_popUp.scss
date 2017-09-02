@@ -1,0 +1,107 @@
+.pop-up-container {
+    z-index: 9998;
+    // position: absolute;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    // left: 0;
+    // right: 0;
+    margin: auto;
+
+    // popup centered on screen when you click anywhere
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.pop-up-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 30px;
+}
+
+    .pop-up-image-container {
+        display: flex;
+        align-items: center;
+    }
+
+        .pop-up-image {
+            height: 70vh;
+        }
+
+    .pop-up-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pop-up-movie-title {
+        font-size: 2.3em;
+        text-transform: uppercase;
+        font-family: $oswald;
+        font-weight: bold;
+    }
+
+    .close-button {
+        outline: none;
+        background: transparent;
+        color: #fff;
+        font-size: 30px;
+        padding-right: 15px;
+        border: none;
+        outline: none;
+    }
+        .close-button:hover {
+            color: $limegreen;
+        }
+
+    .details {
+        padding-top: 15px;
+        padding-right: 50px;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: $lato;
+        line-height: 25px;
+
+    }
+
+    .release-votes {
+        padding-top: 70px;
+        display: flex;
+    }
+
+        .original-release {
+            margin-right: 90px;
+            font-size: 1.3em;
+        }
+
+        .release-text {
+            margin-bottom: 8px;
+        }
+
+        .vote-average {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+        }
+
+            .green-detail {
+                font-size: 30px;
+                color: $limegreen;
+                font-family: $oswald;
+            }
+
+
+//media queries
+@media (max-width: 1500px) {
+    .release-votes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .vote-average {
+        // margin-top: 30px;
+    }
+}
